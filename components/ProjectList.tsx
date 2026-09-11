@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { projects, MediaItem } from "@/data/projects";
 
 function MediaTile({
@@ -39,9 +40,12 @@ function MediaTile({
           title={alt}
         />
       ) : (
-        <img
+        <Image
           src={m.src}
           alt={alt}
+          fill
+          quality={60}
+          sizes="(max-width: 768px) 100vw, 50vw"
           className={imgClass + (onOpen ? " cursor-zoom-in" : "")}
           onClick={onOpen ? () => onOpen(m.src) : undefined}
         />
@@ -160,12 +164,16 @@ function Lightbox({ src, onClose }: { src: string; onClose: () => void }) {
       >
         ×
       </button>
-      <img
-        src={src}
-        alt=""
-        className="max-w-full max-h-full object-contain cursor-zoom-out"
-        onClick={onClose}
-      />
+      <div className="relative w-full h-full" onClick={onClose}>
+        <Image
+          src={src}
+          alt=""
+          fill
+          quality={60}
+          sizes="100vw"
+          className="object-contain cursor-zoom-out"
+        />
+      </div>
     </div>
   );
 }

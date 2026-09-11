@@ -7,7 +7,7 @@ export default function Header() {
       <div className="hidden md:grid w-full grid-cols-3 items-center">
         <span className="font-bold text-[40px] justify-self-start">alejandrodeluis</span>
         <span className="justify-self-center">Information</span>
-        <a href="https://instagram.com/alejandrodeluis_" className="whitespace-nowrap justify-self-end">
+        <a href="https://instagram.com/alejandrodeluis_" target="_blank" rel="noopener noreferrer" className="whitespace-nowrap justify-self-end">
           @alejandrodeluis_
         </a>
       </div>

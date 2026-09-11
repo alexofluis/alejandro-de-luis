@@ -211,7 +211,7 @@ export default function ProjectList() {
               <div className="text-gray-700">
                 <p>{project.description}</p>
                 {project.link && (
-                  <a href={`https://${project.link}`} className="underline block mt-2">
+                  <a href={`https://${project.link}`} target="_blank" rel="noopener noreferrer" className="underline block mt-2">
                     {project.link}
                   </a>
                 )}

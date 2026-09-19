@@ -54,7 +54,7 @@ export const projects: Project[] = [
     description: "The concern for the environment is growing, and after the pandemic many of us realized the importance of materials and how they affect our health. In this context, our project explored how to bring nature into people's spaces through a modular solution made with natural materials.",
     category: ["furniture", "objects"],
     collaborators: [{ name: "Carlos de Luis", url: "https://carlosdeluis.cargo.site" }],
-    media: [vimeoEmbed("https://player.vimeo.com/video/956788107?portrait=0&muted=1&autopause=0&pip=0&volume=0&loop=1&app_id=122963&controls=0"), ...fullThenGrid("camp", ["1.png", "2.png", "3.png", "4.png", "5.png"])],
+    media: [vimeoEmbed("https://player.vimeo.com/video/956788107?portrait=0&muted=1&autopause=0&pip=0&volume=0&loop=1&app_id=122963&controls=0&autoplay=1"), ...fullThenGrid("camp", ["1.png", "2.png", "3.png", "4.png", "5.png"])],
   },
   {
     slug: "charlotte",
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     year: "2023",
     description: "In a society where living spaces are increasingly smaller, we saw the need to redesign the classic turntable to adapt it to these new compact environments.",
     category: ["tech", "objects"],
-    media: [...fullThenGrid("s-jive", ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"]), vimeoEmbed("https://player.vimeo.com/video/1035781473?portrait=0&muted=1&autopause=0&pip=0&volume=0&loop=1&app_id=122963&controls=0")],
+    media: [...fullThenGrid("s-jive", ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"]), vimeoEmbed("https://player.vimeo.com/video/1035781473?portrait=0&muted=1&autopause=0&pip=0&volume=0&loop=1&app_id=122963&controls=0&autoplay=1")],
   },
   {
     slug: "pit-go",

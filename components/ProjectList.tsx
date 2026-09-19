@@ -21,8 +21,12 @@ function MediaTile({
 
   const imgClass = "w-full h-full object-cover block";
 
+  // Full-width, non-grid images keep their natural aspect ratio so tall
+  // photos are never cropped; grid/video/vimeo tiles keep a fixed frame.
+  const isNaturalImage = !fill && m.type === "image";
+
   return (
-    <div className={fill ? "relative h-full" : frameClass}>
+    <div className={isNaturalImage ? "relative w-full" : fill ? "relative h-full" : frameClass}>
       {m.type === "video" ? (
         <video
           src={m.src}
@@ -38,6 +42,14 @@ function MediaTile({
           className="absolute inset-0 w-full h-full"
           allow="autoplay; fullscreen; picture-in-picture"
           title={alt}
+        />
+      ) : isNaturalImage ? (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img
+          src={m.src}
+          alt={alt}
+          className={"w-full h-auto block" + (onOpen ? " cursor-zoom-in" : "")}
+          onClick={onOpen ? () => onOpen(m.src) : undefined}
         />
       ) : (
         <Image

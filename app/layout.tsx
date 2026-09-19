@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Momo_Trust_Sans } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 
 const momoTrustSans = Momo_Trust_Sans({
   subsets: ["latin"],
@@ -26,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${momoTrustSans.variable} antialiased`}>
-        <CustomCursor />
         {children}
       </body>
     </html>

@@ -16,41 +16,18 @@ body {
   background-color: #ffffff;
 }
 
-@media (pointer: fine) {
-  body {
-    cursor: none;
-  }
-
-  a,
-  button,
-  [role="button"] {
-    cursor: pointer;
-  }
-
-  .cursor-zoom-in {
-    cursor: zoom-in;
-  }
-
-  .cursor-zoom-out {
-    cursor: zoom-out;
-  }
+a,
+button,
+[role="button"] {
+  cursor: pointer;
 }
 
-.custom-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate3d(-100px, -100px, 0) translate(-50%, -50%);
-  transition: opacity 0.3s ease;
-  will-change: transform;
+.cursor-zoom-in {
+  cursor: zoom-in;
 }
 
-.custom-cursor--fade {
-  opacity: 0;
+.cursor-zoom-out {
+  cursor: zoom-out;
 }
 
 a {

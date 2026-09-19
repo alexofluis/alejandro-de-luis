@@ -6,7 +6,7 @@ export default function Header() {
       {/* Desktop: original single row */}
       <div className="hidden md:grid w-full grid-cols-3 items-center">
         <span className="font-bold text-[40px] justify-self-start">alejandrodeluis</span>
-        <span className="justify-self-center">Information</span>
+        <a href="#experience" className="justify-self-center">Information</a>
         <a href="https://instagram.com/alejandrodeluis_" target="_blank" rel="noopener noreferrer" className="whitespace-nowrap justify-self-end">
           @alejandrodeluis_
         </a>

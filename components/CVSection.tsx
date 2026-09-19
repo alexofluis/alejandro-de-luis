@@ -2,7 +2,7 @@ import { experience, education, languages } from "@/data/cv";
 
 export default function CVSection() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10 mt-10">
+    <section id="experience" className="grid grid-cols-1 md:grid-cols-3 gap-8 py-10 mt-10 scroll-mt-10">
       <div>
         <p className="font-bold mb-4">Experience</p>
         <div className="space-y-4">
